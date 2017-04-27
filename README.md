@@ -1,0 +1,2 @@
+# synthetica
+Example website - Synthetica
