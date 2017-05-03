@@ -1,0 +1,17 @@
+email:
+twitter_username:
+
+highlighter: pygments # or rouge or null
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+port: 9000
+
+sass:
+  sass_dir: assets/css
+  style: :compressed
+
+exclude: ["node_modules", "gulpfile.js", "package.json"]

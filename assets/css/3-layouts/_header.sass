@@ -1,0 +1,108 @@
+// Top Header
+.top-header
+    background:
+        color: #414A52
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    position: fixed
+    top: 0
+    z-index: 999
+    height: 150px
+    width: 100%
+
+    // Logo left
+    .logo
+        display: inline-block
+        margin-right: auto
+        padding-left: 60px
+
+    // Navigation Wrap Right
+    .navigation
+        display: inline-block
+        margin-left: auto
+        padding-right: 60px
+        nav
+            ul
+                li
+                  display: inline
+                  padding: 0 10px
+                  font:
+                      size: 13px
+                      weight: bold
+                  text-transform: uppercase
+                  color: #fff
+
+                  a:focus, a:active
+                    border-bottom: 2px solid #66E0E5
+                    color: #66E0E5
+                    padding-bottom: 10px
+
+    // Top Header Responsive
+    @media (max-width: 800px)
+      .logo
+        margin: 10px auto
+        text-align: center
+        padding: 0
+
+      .navigation
+        text-align: center
+        padding: 0
+        margin: 0 auto
+
+        ul
+          padding: 10px
+
+// Header
+header
+    // Hero Image
+    .hero
+        height: 700px
+        background:linear-gradient(0deg,rgba(65,74,82,0.3),rgba(65,74,82,0.3)), url(../img/header/hero-1.png)
+            repeat: no-repeat
+            size: cover
+            position: center center
+
+        // Hero Text Wrap
+        .header-text
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            margin-right: -50%
+
+            // Main Header Title
+            h1
+                font:
+                    size: 45px
+                    weight: 300
+                color: #fff
+            text-align: center
+            max-width: 700px
+            padding: 0 20px
+
+            // Header Button
+            button
+                background: $primary-color
+                font-size: 13px
+                color: #FFF
+                letter-spacing: 1.73px
+                text-transform: uppercase
+                padding: 14px 10px
+
+            // Header Horizontal Line
+            hr
+              border: 1px solid rgba(255,255,255,0.25)
+              max-width: 570px
+              margin: 30px auto
+
+            // Header Kicker
+            p
+                font:
+                    size: 15px
+                    weight: 300
+                    style: italic
+                color: #fff
+
+                span
+                    font-weight: bold
