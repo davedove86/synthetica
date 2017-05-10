@@ -1,0 +1,95 @@
+// Flex Classes
+.flex
+  display: flex
+  flex-direction: row
+  justify-content: center
+  +clearfix
+
+// columns
+
+.col-1
+  max-width: 500px
+  padding: 50px
+
+.col-2-1
+  background:linear-gradient(0deg,rgba(65,74,82,0.3),rgba(65,74,82,0.4)), url(../img/freebies/freebie-1.png)
+    size: cover
+    repeat: no-repeat
+    position: center center
+  width: 100%
+  height: 500px
+
+.col-2-2
+  background:linear-gradient(0deg,rgba(65,74,82,0.3),rgba(65,74,82,0.4)), url(../img/freebies/freebie-2.png)
+    size: cover
+    repeat: no-repeat
+    position: center center
+  width: 100%
+  height: 500px
+
+.container
+  position: relative
+  width: 100%
+
+.image
+  display: block
+  width: 100%
+  height: auto
+
+.overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+  opacity: 0
+  transition: .5s ease
+  background-color: #414A52
+
+.container:hover .overlay
+  opacity: 0.9
+
+.text
+  color: white
+  font-size: 20px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  text-align: center
+  margin: 0 auto
+
+  p
+    font:
+      size: 13px
+      weight: 300
+    color: #B0B4B6
+
+  h3
+    font:
+      size: 15px
+      weight: 600
+    color: #fff
+    text-transform: uppercase
+
+  .freebie-hr
+    background-color: #fff
+    height: 1px
+    width: 315px
+
+  button
+    border: 2px solid #66E0E5
+    font-family: Raleway-SemiBold
+    font-size: 13px
+    color: #66E0E5
+    letter-spacing: 1.73px
+    background-color: transparent
+    text-transform: uppercase
+    padding: 15px 20px
+
+@media (max-width: 775px)
+  .flex
+    display: block

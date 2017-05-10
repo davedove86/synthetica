@@ -517,7 +517,7 @@ body {
 
 body {
   background: #FFF;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   font-family: 'Fira Sans' sans-serif;
   color: #4D5256;
@@ -549,7 +549,6 @@ body {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
-  position: fixed;
   top: 0;
   z-index: 999;
   height: 150px;
@@ -654,7 +653,7 @@ header .hero {
       padding: 0; }
       .crew .crew-wrap ul li {
         list-style-type: none;
-        padding: 15px; }
+        padding: 10px; }
     .crew .crew-wrap .container-top {
       position: relative;
       width: 50%; }
@@ -740,3 +739,134 @@ header .hero {
         .crew .skills-bar-wrap .skills-container p {
           text-align: center;
           margin: 0 auto; } }
+
+.stats {
+  background-image: url(../img/stats/stats-bg.png);
+  background-size: cover;
+  color: #414A52;
+  opacity: 0.9;
+  width: 100%;
+  height: 400px; }
+  .stats .layer {
+    background-color: #414A52;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%; }
+  .stats .full-width {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 120px; }
+    .stats .full-width .asset {
+      text-align: center; }
+      .stats .full-width .asset h3, .stats .full-width .asset p {
+        color: #fff;
+        margin: 0 auto; }
+      .stats .full-width .asset h3 {
+        font-size: 48px;
+        font-weight: 700; }
+      .stats .full-width .asset p {
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase; }
+
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .flex::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.col-1 {
+  max-width: 500px;
+  padding: 50px; }
+
+.col-2-1 {
+  background: linear-gradient(0deg, rgba(65, 74, 82, 0.3), rgba(65, 74, 82, 0.4)), url(../img/freebies/freebie-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  width: 100%;
+  height: 500px; }
+
+.col-2-2 {
+  background: linear-gradient(0deg, rgba(65, 74, 82, 0.3), rgba(65, 74, 82, 0.4)), url(../img/freebies/freebie-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  width: 100%;
+  height: 500px; }
+
+.container {
+  position: relative;
+  width: 100%; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #414A52; }
+
+.container:hover .overlay {
+  opacity: 0.9; }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto; }
+  .text p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #B0B4B6; }
+  .text h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase; }
+  .text .freebie-hr {
+    background-color: #fff;
+    height: 1px;
+    width: 315px; }
+  .text button {
+    border: 2px solid #66E0E5;
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: #66E0E5;
+    letter-spacing: 1.73px;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 15px 20px; }
+
+@media (max-width: 775px) {
+  .flex {
+    display: block; } }
