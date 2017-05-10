@@ -526,7 +526,7 @@ body {
   body .sub-title {
     max-width: 800px;
     text-transform: uppercase;
-    margin: 120px auto 0 auto;
+    margin: 0 auto;
     padding: 0 20px; }
   body .sub-title:after {
     content: "";
@@ -629,7 +629,7 @@ header .hero {
 .collective {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px; }
+  padding: 50px 20px; }
   .collective .video {
     text-align: center;
     padding: 40px 0;
@@ -640,7 +640,7 @@ header .hero {
 
 .crew {
   background: #F4F6F9;
-  padding: 125px 0; }
+  padding: 50px 0; }
   .crew .crew-wrap {
     /* Container for skill bars */ }
     .crew .crew-wrap ul {
@@ -776,6 +776,9 @@ header .hero {
         font-size: 15px;
         font-weight: 600;
         text-transform: uppercase; }
+
+.freebies {
+  padding: 50px 0; }
 
 .flex {
   display: -ms-flexbox;
