@@ -477,9 +477,6 @@ a {
   color: #fff;
   text-decoration: none; }
 
-p {
-  margin: 0 0 20px 0; }
-
 em {
   font-style: italic; }
 
@@ -526,8 +523,23 @@ body {
   color: #4D5256;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
-  body section {
-    padding-top: 120px; }
+  body .sub-title {
+    max-width: 800px;
+    text-transform: uppercase;
+    margin: 120px auto 0 auto;
+    padding: 0 20px; }
+  body .sub-title:after {
+    content: "";
+    display: block;
+    width: 30px;
+    margin: 15px 0 30px 0;
+    border-bottom: 2px solid #66E0E5; }
+  body hr {
+    max-width: 800px;
+    background-color: #66E0E5;
+    height: 2px;
+    width: 80px;
+    text-align: justify; }
 
 .top-header {
   background-color: #414A52;
@@ -600,10 +612,13 @@ header .hero {
       letter-spacing: 1.73px;
       text-transform: uppercase;
       padding: 14px 10px; }
-    header .hero .header-text hr {
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      max-width: 570px;
-      margin: 30px auto; }
+    header .hero .header-text .header-hr {
+      max-width: 800px;
+      background-color: #66E0E5;
+      height: 1px;
+      width: 300px;
+      text-align: justify;
+      margin: 20px auto; }
     header .hero .header-text p {
       font-size: 15px;
       font-weight: 300;
@@ -611,3 +626,117 @@ header .hero {
       color: #fff; }
       header .hero .header-text p span {
         font-weight: bold; }
+
+.collective {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px; }
+  .collective .video {
+    text-align: center;
+    padding: 40px 0;
+    margin: 0 auto; }
+    .collective .video iframe {
+      max-width: 100%;
+      max-height: 100%; }
+
+.crew {
+  background: #F4F6F9;
+  padding: 125px 0; }
+  .crew .crew-wrap {
+    /* Container for skill bars */ }
+    .crew .crew-wrap ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding: 0; }
+      .crew .crew-wrap ul li {
+        list-style-type: none;
+        padding: 15px; }
+    .crew .crew-wrap .container-top {
+      position: relative;
+      width: 50%; }
+    .crew .crew-wrap .image-top {
+      height: 300px;
+      width: 269px;
+      display: block; }
+    .crew .crew-wrap .overlay-top {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #66E0E5;
+      opacity: 0.9;
+      overflow: hidden;
+      height: 300px;
+      width: 269px;
+      height: 0;
+      transition: .5s ease; }
+    .crew .crew-wrap .container-top:hover .overlay-top {
+      bottom: 0;
+      height: 100%; }
+    .crew .crew-wrap .text-top {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center; }
+      .crew .crew-wrap .text-top h5, .crew .crew-wrap .text-top h4 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff; }
+      .crew .crew-wrap .text-top img {
+        padding: 0 5px; }
+  .crew .skills-bar-wrap {
+    max-width: 800px;
+    margin: 20px auto;
+    display: -ms-flexbox;
+    display: flex; }
+    .crew .skills-bar-wrap p {
+      font-size: 13px;
+      margin: 0;
+      padding: 0; }
+    .crew .skills-bar-wrap .skills-container {
+      width: 90%;
+      height: 100%;
+      margin: 0 20px; }
+      .crew .skills-bar-wrap .skills-container p {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+        .crew .skills-bar-wrap .skills-container p span {
+          font-weight: 700; }
+    .crew .skills-bar-wrap .skills {
+      text-align: right;
+      line-height: 10px;
+      color: #66E0E5; }
+    .crew .skills-bar-wrap .design, .crew .skills-bar-wrap .prototyping, .crew .skills-bar-wrap .html, .crew .skills-bar-wrap .visual-design {
+      background-color: #66E0E5; }
+    .crew .skills-bar-wrap .design {
+      width: 90%; }
+    .crew .skills-bar-wrap .prototyping {
+      width: 80%; }
+    .crew .skills-bar-wrap .html {
+      width: 95%; }
+    .crew .skills-bar-wrap .visual-design {
+      width: 85%; }
+  @media (max-width: 750px) {
+    .crew .skills-bar-wrap {
+      display: block;
+      padding: 0 30px; }
+      .crew .skills-bar-wrap .skills-container {
+        margin: 30px 0; }
+        .crew .skills-bar-wrap .skills-container p {
+          text-align: center;
+          margin: 0 auto; } }
